@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(#5d61f2, #27296b);
+        }
+
+        #calc{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 60px);
+            gap: .5em;
+
+            width: 300px;
+            padding: 20px;
+            background-image: linear-gradient(#5981a4, #2b4772);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(0 0 0 / .8);
+        }
+
+        #display, button{
+            background-image: linear-gradient(#353535, #1b1717);
+            color: white;
+        }
+
+        #display{
+            background-image: linear-gradient(#353535, #1b1717);
+            box-shadow: inset 3px 3px 0 #161616;
+            grid-column: 1 / -1;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 15px;
+            font-size: 32px;
+        }
+
+        button:nth-child(17){
+            grid-row: 5 / 7;
+            grid-column: 4 / 5;
+        }        
+        .nada{
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="calc">
+        <output id="display">0</output>
+
+        <button>AC</button>
+        <button>%</button>
+        <button>X</button>
+        <button>/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>=</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button class="nada">0</button>
+        <button>,</button>
+    </div>
+</body>
+</html>

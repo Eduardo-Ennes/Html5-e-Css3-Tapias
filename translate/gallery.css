@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 62.5%;
+    min-height: 100vh;
+    display: flex;
+    gap: 4em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 182, 182);
+}
+
+h1{
+    font-size: 2rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    transition: transform .5s;
+}
+
+.section-contein{
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    justify-content: space-between;
+    background-color: white;
+    padding: .8em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
+}
+
+.div-contein-img a{
+    text-decoration: none;
+}
+
+.div-contein-img{
+    flex-basis: calc(25% - .5em);
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1; /* Se uma div é apagada as divs no html irão dividir o espaço da div apagada e irão se adaptar aos espaços da caixa*/
+}
+
+.section-contein p{
+    text-align: center;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    text-transform: uppercase;
+    padding: .7em;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(125%);
+    transition: transform .5s ease-in-out;
+}
+
+.div-contein-img:hover p{
+    transform: translateY(0);
+}
+
+.div-contein-img:hover img{
+    transform: scale(1.2)
+}

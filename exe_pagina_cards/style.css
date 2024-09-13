@@ -1,0 +1,63 @@
+
+
+body{
+    background-image: url(imagens/bg-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    padding: 3px;
+}
+
+.hero-content{
+    text-align: center;
+    margin: auto;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    color: white;
+    margin-top: 0;
+}
+
+.hero-content p{
+    width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.082);
+    text-align: left;
+    padding: 10px 10px 10px 15px;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+
+.card-section{
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    background-color: white;
+    width: 70%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img{
+    margin-bottom: 0;
+    display: block;
+}
+
+.card-article p{
+    background-color: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    display: block;
+    margin-top: 0;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+.card-article p:hover{
+    background-color: rgba(0, 0, 0, 0.63);
+}
